@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galactic News</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="src/components/CardNews.js" defer></script>
+  <script src="src/components/DynamicTitle.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- <div class="card">
+      <div class="card__left">
+        <span>By Jason Bourne</span>
+        <a href="#">
+          <h1>Darth Vader Hires Devs</h1>
+        </a>
+        <p>Darth Vader is looking for developers who know how to work with components</p>
+      </div>
+      <div class="card__right">
+        <img src="assets/darth-vader.jpg" alt="Darth Vader looking at the screen">
+      </div>
+    </div> -->
+
+    <div class="card-wrapper">
+      <card-news author="Jason Bourne" title="Darth Vader Hires Devs" linkSrc="https://www.google.com/" content="Darth Vader is looking for developers who know how to work with components" imgSrc="assets/darth-vader.jpg" imgAlt="Darth Vader looking at the screen"></card-news>
+      <card-news title="Yoda Convinces the Republic to use Components">
+      </card-news>
+    </div>
+  </div>
+
+  <!-- <dynamic-title title="This is the Title"></dynamic-title>
+  <dynamic-title title="Novo Título"></dynamic-title>
+  <dynamic-title title="Jason Bourne"></dynamic-title> -->
+</body>
+
+</html>
