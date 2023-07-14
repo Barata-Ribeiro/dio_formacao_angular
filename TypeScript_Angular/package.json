@@ -1,0 +1,15 @@
+{
+  "name": "typescript_angular",
+  "version": "1.0.0",
+  "description": "Just for studying...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tsc && node dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}
