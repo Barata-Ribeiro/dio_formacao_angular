@@ -5,9 +5,10 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { TitleComponent } from './title/title.component';
+import { CheckSampleComponent } from './check-sample/check-sample.component';
 
 @NgModule({
-  declarations: [AppComponent, TitleComponent],
+  declarations: [AppComponent, TitleComponent, CheckSampleComponent],
   imports: [BrowserModule, RouterModule],
   providers: [],
   bootstrap: [AppComponent],

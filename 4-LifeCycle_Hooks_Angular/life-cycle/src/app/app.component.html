@@ -1,3 +1,9 @@
 <h1>My Application</h1>
-<app-title></app-title>
+
+<app-title name="product 1"></app-title>
+<app-title name="product 2"></app-title>
+
+<app-check-sample *ngIf="isAliveCheckSample"></app-check-sample>
+<button (click)="disposeCheckSample()">Spawn/DeSpawn</button>
+
 <router-outlet></router-outlet>
