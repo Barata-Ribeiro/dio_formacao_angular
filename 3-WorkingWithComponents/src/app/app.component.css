@@ -1,0 +1,14 @@
+p {
+  font-family: Lato;
+}
+
+h1 {
+  color: blue;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 0 1rem;
+}

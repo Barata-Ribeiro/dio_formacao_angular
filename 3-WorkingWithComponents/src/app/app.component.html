@@ -1,0 +1,18 @@
+<menu-component></menu-component>
+<hello [name]="name"></hello>
+<p>Start editing to see some magic happen :)</p>
+<h1>Olá MUNDÃO!</h1>
+
+<div class="buttonContainer">
+  <!-- data binding = associação de dados -->
+  <!-- Interpolação -->
+  <my-button label="{{ buttonLabel }}"></my-button>
+  <my-button label="Hello, world!"></my-button>
+
+  <!-- property binding -->
+  <my-button [label]="buttonSecond"></my-button>
+  <my-button [label]="'Carrinho'"></my-button>
+</div>
+
+<!-- two way data binding -->
+<app-entry-data></app-entry-data>
