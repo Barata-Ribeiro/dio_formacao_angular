@@ -1,0 +1,32 @@
+<p [ngClass]="styles">comp-attributes works!</p>
+<button (click)="changeStyles()">Change Status</button>
+
+<h1 [ngStyle]="{ background: backgroundColor, color: fontColor }">
+  ANGULAR COURSE
+</h1>
+
+<ng-content select="h2"></ng-content>
+<ng-content select="p"></ng-content>
+
+<h1>Shop List</h1>
+<p>Add a Item</p>
+<input type="text" [(ngModel)]="item" />
+<button (click)="addStuffToList()">Add Item to List</button>
+
+<ul>
+  <li *ngFor="let element of stuffList">{{ element }}</li>
+</ul>
+
+<hr />
+
+<ng-template [ngIf]="isEnableBlock">
+  <a href="#">Proceed to Checkout</a>
+</ng-template>
+
+<br />
+
+<ng-template [ngIf]="isEnableBlock">
+  <a href="#">Add to Cart</a>
+</ng-template>
+
+<hr />
