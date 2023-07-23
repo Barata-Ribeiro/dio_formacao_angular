@@ -1,15 +1,20 @@
+<form (ngSubmit)="getPokemon()">
+  <input type="text" [(ngModel)]="pokemonName" name="pokemonName" />
+  <button type="submit">Get Pokemon</button>
+</form>
+
 <div class="container__card">
   <div class="card__title">
-    <h3>{{ name }}</h3>
+    <h3>{{ pokemon.name }}</h3>
   </div>
 
   <div class="card__body">
-    <img src="" alt="pokemon" />
+    <img [src]="pokemon.sprites.front_default" alt="teste" />
   </div>
 
   <div class="card__stats">
-    <span *ngFor="let type of attributes" class="card__stats__type">{{
-      type
+    <span class="card__stats__type" *ngFor="let type of pokemon.types">{{
+      type.type.name
     }}</span>
   </div>
 </div>
