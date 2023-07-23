@@ -1,0 +1,15 @@
+<div class="container__card">
+  <div class="card__title">
+    <h3>{{ name }}</h3>
+  </div>
+
+  <div class="card__body">
+    <img src="" alt="pokemon" />
+  </div>
+
+  <div class="card__stats">
+    <span *ngFor="let type of attributes" class="card__stats__type">{{
+      type
+    }}</span>
+  </div>
+</div>
