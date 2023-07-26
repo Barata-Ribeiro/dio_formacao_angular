@@ -6,9 +6,10 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component';
+import { TransformadorPipe } from './pipes/transformador.pipe';
 
 @NgModule({
-  declarations: [AppComponent, CardComponent],
+  declarations: [AppComponent, CardComponent, TransformadorPipe],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
